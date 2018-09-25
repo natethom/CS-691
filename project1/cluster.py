@@ -71,6 +71,8 @@ def K_Means(X,K):
     return np.array(cluster_centers)
 
 def K_Means_better(X, K):
-    K_Means_return_values = {}
+    k_means_return_values = {}
+    while True:
+        k_means_return_values[]
 
 print(f"OUTPUT: {K_means(X, 5)}")
