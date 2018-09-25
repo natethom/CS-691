@@ -73,6 +73,17 @@ def K_Means(X,K):
 def K_Means_better(X, K):
     k_means_return_values = {}
     while True:
-        k_means_return_values[]
+        return_value = K_Means(X, K)
+        if str(return_value) in k_means_return_values.values():
+            print("\nIN IF STATEMENT\n")
+            k_means_return_values[str(return_value)]['num_returned'] = k_means_return_values[str(return_value)]['num_returned'] + 1
+            return "made it"
+        else:
+            print("\nIN ELSE STATEMENT\n")
+            k_means_return_values[str(return_value)] = {str(return_value):return_value, 'num_returned':1}
+        print(f'Dict: \n{k_means_return_values}\n\n')
+        print(f'Return Value: \n{return_value}\n\n')
+        print(f'Return Value as str: \n{str(return_value)}\n\n')
 
-print(f"OUTPUT: {K_means(X, 5)}")
+K_Means_better(X, 2)
+#print(f"OUTPUT: {K_Means(X, 5)}")

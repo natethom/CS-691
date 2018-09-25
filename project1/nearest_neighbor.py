@@ -76,5 +76,8 @@ def choose_K(X_train, Y_train, X_val, Y_val):
 #choose_K(X_train, Y_train, X_test, Y_test)
 #choose_K(my_x_train, my_y_train, X_test, Y_test)
 
-print(KNN_test(X_train, Y_train, X_test, Y_test, 5))
+print(KNN_test(X_train, Y_train, X_test, Y_test, 1))
+print(KNN_test(X_train, Y_train, X_test, Y_test, 3))
+print(KNN_test(X_train, Y_train, X_test, Y_test, 3))
+
 #print(KNN_test(my_x_train, my_y_train, my_x_test, my_y_test, 3))
